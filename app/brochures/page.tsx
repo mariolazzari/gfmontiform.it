@@ -12,15 +12,22 @@ function BrochuresPage() {
       title: "English conversation",
       subtitle: "Conversazione sabato mattina",
       description: "Migliora il tuo inglese in un'atmosfera rilassata",
-      imagePath: "conversation sabato mattina.png",
-      href: "conversation sabato mattina.pdf",
+      imagePath: "saturday.png",
+      href: "saturday.pdf",
     },
     {
       title: "Conversasione spagnola",
       subtitle: "Ogni martedì sera",
       description: "Dalle ore 18:30 alle ore 20:00",
-      imagePath: "conversazione spagnola.png",
-      href: "conversazione spagnola.pdf",
+      imagePath: "spanish.png",
+      href: "spanish.pdf",
+    },
+    {
+      title: "Nuova lingua",
+      subtitle: "Hai voglia di imparare una nuva lingua",
+      description: "Le meraviglie di una nuova lingua",
+      imagePath: "new.png",
+      href: "new.pdf",
     },
   ];
 
