@@ -86,6 +86,37 @@ function BrochuresPage() {
     },
   ];
 
+  const cits: BrochureProps[] = [
+    {
+      title: "Citazione motivazionale 1",
+      subtitle: "Prima citazione",
+      description: "Prima citazione motivazionale",
+      imagePath: "cit1.png",
+      href: "cit1.png",
+    },
+    {
+      title: "Citazione motivazionale",
+      subtitle: "Seconda citazione",
+      description: "Seconda citazione motivazionale",
+      imagePath: "cit2.png",
+      href: "cit2.png",
+    },
+    {
+      title: "Citazione motivazionale",
+      subtitle: "Terza citazione",
+      description: "Terza citazione motivazionale",
+      imagePath: "cit3.png",
+      href: "cit3.png",
+    },
+    {
+      title: "Citazione motivazionale",
+      subtitle: "Quarta citazione",
+      description: "Quarta citazione motivazionale",
+      imagePath: "cit4.png",
+      href: "cit4.png",
+    },
+  ];
+
   return (
     <div className="flex flex-col items-center">
       <h2 className="text-4xl text-center my-12">Conversazioni</h2>
@@ -106,6 +137,13 @@ function BrochuresPage() {
       <div className="flex justify-center items-center flex-wrap gap-16">
         {events.map(conv => (
           <Brochure key={conv.title} {...conv} />
+        ))}
+      </div>
+
+      <h2 className="text-4xl text-center my-12">Citazioni motivazionali</h2>
+      <div className="flex justify-center items-center flex-wrap gap-16">
+        {cits.map(conv => (
+          <Brochure key={conv.href} {...conv} />
         ))}
       </div>
     </div>
