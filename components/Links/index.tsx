@@ -1,4 +1,4 @@
-import { Home, Info, ScrollText } from "lucide-react";
+import { Home, Info, ScrollText, GraduationCap } from "lucide-react";
 import { LinksProps } from "./LinksProps";
 import Link from "next/link";
 import { DialogClose } from "@radix-ui/react-dialog";
@@ -20,6 +20,11 @@ export function Links({ isVertical = false }: LinksProps) {
       icon: <ScrollText />,
       label: "Brochures",
       href: "/brochures",
+    },
+    {
+      icon: <GraduationCap />,
+      label: "Corsi",
+      href: "/courses",
     },
   ];
 
