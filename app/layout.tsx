@@ -7,7 +7,10 @@ import { Footer } from "@/components/Footer";
 import { Layout } from "@/types/Layout";
 
 export const metadata: Metadata = {
-  title: "GF MontiForm",
+  title: {
+    template: "%s | GF Montiform",
+    default: "GF Montiform",
+  },
   description: "GF MontiForm scuola di lingue Montichiari",
 };
 

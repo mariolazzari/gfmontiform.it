@@ -1,6 +1,11 @@
 import { TextContainer } from "@/components/TextContainer";
 import { TextContainerProps } from "@/components/TextContainer/TextContainerProps";
 import { YouTubeEmbed } from "@next/third-parties/google";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Chi siamo",
+};
 
 function AboutPage() {
   const mainSections: TextContainerProps[] = [

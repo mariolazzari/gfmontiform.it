@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p 3333",
+    "lint": "next lint",
+    "clean": "rm -rf node_modules & rm -rf .next"
   },
   "dependencies": {
     "@next/third-parties": "^15.0.3",
