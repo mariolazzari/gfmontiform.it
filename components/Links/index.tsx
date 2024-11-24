@@ -36,10 +36,7 @@ export function Links({ isVertical = false }: LinksProps) {
       {links.map(link => (
         <li key={link.href}>
           {renderItem(
-            <Link
-              href={link.href}
-              className="flex items-center gap-2 text-lg hover:animate-bounce"
-            >
+            <Link href={link.href} className="flex items-center gap-2 text-lg">
               {link.icon} {link.label}
             </Link>
           )}
