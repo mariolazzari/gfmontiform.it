@@ -5,6 +5,7 @@ import { Mail, Download } from "lucide-react";
 import { CardImageProps } from "@/components/CardImage/CardImageProps";
 import { CardImage } from "@/components/CardImage";
 import Image from "next/image";
+import { Flags } from "@/components/Flags";
 
 function HomePage() {
   const buttons = [
@@ -61,6 +62,7 @@ function HomePage() {
         <h1 className="text-4xl text-center max-w-xl">
           Diventa anche tu un cittadino del mondo
         </h1>
+
         <h2 className="text-3xl text-center max-w-xl">
           Iscriviti ai nostri corsi
         </h2>
@@ -81,19 +83,21 @@ function HomePage() {
         ))}
       </div>
 
-      <div className="flex justify-center items-center gap-8 container flex-wrap">
+      <Flags />
+
+      <div className="flex justify-center items-center gap-16 container flex-wrap">
         {cards.map(card => (
           <CardImage key={card.title} {...card} />
         ))}
       </div>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mt-8">
         <h4 className="text-2xl">3,2,1 …GO!</h4>
         <h5 className="text-xl text-center">
           La tua conoscenza della lingua inizia con il prossimo click
         </h5>
         <Image
-          className="my-4"
+          className="my-8"
           src="/images/conv.png"
           alt="conversation"
           width={350}

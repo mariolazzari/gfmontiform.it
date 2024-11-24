@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/sheet";
 import { Links } from "../Links";
 import Logo from "../Logo";
+import { Flags } from "../Flags";
 
 export function Drawer() {
   return (
@@ -20,9 +21,11 @@ export function Drawer() {
       </SheetTrigger>
 
       <SheetContent className="w-64" side="right">
-        <SheetHeader>
+        <SheetHeader className="mb-4">
           <Logo isDrawer />
-          <SheetTitle></SheetTitle>
+          <SheetTitle>
+            <Flags size={24} />
+          </SheetTitle>
           <SheetDescription></SheetDescription>
         </SheetHeader>
         <Links isVertical />
