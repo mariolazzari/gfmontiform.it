@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Mail, Download } from "lucide-react";
 import { CardImageProps } from "@/components/CardImage/CardImageProps";
 import { CardImage } from "@/components/CardImage";
+import Image from "next/image";
 
 function HomePage() {
   const buttons = [
@@ -11,6 +12,7 @@ function HomePage() {
       label: "Scrivici",
       href: "mailto:info@gfmontiform.it",
       icon: <Mail />,
+      balnk: true,
     },
     {
       label: "Brochures",
@@ -66,7 +68,11 @@ function HomePage() {
 
       <div className="flex gap-4">
         {buttons.map(btn => (
-          <Link key={btn.href} href={btn.href} target="_blank">
+          <Link
+            key={btn.href}
+            href={btn.href}
+            target={btn.balnk ? "_blank" : undefined}
+          >
             <Button className="w-28">
               {btn.icon}
               {btn.label}
@@ -79,6 +85,21 @@ function HomePage() {
         {cards.map(card => (
           <CardImage key={card.title} {...card} />
         ))}
+      </div>
+
+      <div className="flex flex-col items-center">
+        <h4 className="text-2xl">3,2,1 …GO!</h4>
+        <h5 className="text-xl text-center">
+          La tua conoscenza della lingua inizia con il prossimo click
+        </h5>
+        <Image
+          className="my-4"
+          src="/images/conv.png"
+          alt="conversation"
+          width={350}
+          height={300}
+          priority
+        />
       </div>
     </main>
   );
