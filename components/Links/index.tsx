@@ -1,6 +1,8 @@
 import { Home, Info, ScrollText } from "lucide-react";
 import { LinksProps } from "./LinksProps";
 import Link from "next/link";
+import { DialogClose } from "@radix-ui/react-dialog";
+import { ReactNode } from "react";
 
 export function Links({ isVertical = false }: LinksProps) {
   const links = [
@@ -21,16 +23,26 @@ export function Links({ isVertical = false }: LinksProps) {
     },
   ];
 
+  const renderItem = (child: ReactNode) => {
+    if (isVertical) {
+      return <DialogClose asChild>{child}</DialogClose>;
+    }
+
+    return child;
+  };
+
   return (
     <ul className={isVertical ? "flex flex-col gap-4" : "hidden md:flex gap-2"}>
       {links.map(link => (
         <li key={link.href}>
-          <Link
-            href={link.href}
-            className="flex items-center gap-2 text-lg hover:text-xl cursor-pointer"
-          >
-            {link.icon} {link.label}
-          </Link>
+          {renderItem(
+            <Link
+              href={link.href}
+              className="flex items-center gap-2 text-lg hover:animate-bounce"
+            >
+              {link.icon} {link.label}
+            </Link>
+          )}
         </li>
       ))}
     </ul>

@@ -9,7 +9,7 @@ export function TextContainer({
   imagePath,
 }: TextContainerProps) {
   return (
-    <div className="max-w-xl p-4 rounded-md bg-muted space-y-4 text-justify shadow-md">
+    <div className="max-w-xl p-4 rounded-md space-y-4 text-justify bg-muted">
       <h2 className="text-2xl font-semibold">{title}</h2>
       <Separator className="bg-primary h-[1px]" />
 
