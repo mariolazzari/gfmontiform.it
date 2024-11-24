@@ -6,7 +6,7 @@ import { Separator } from "../ui/separator";
 export function Header() {
   return (
     <header>
-      <nav className="h-[50px] flex justify-between items-center p-4">
+      <nav className="h-[75px] flex justify-between items-center p-4">
         <ThemeToggle />
         <Links />
         <Drawer />

@@ -20,9 +20,9 @@ function RootLayout({ children }: Layout) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Header />
-          <div className="h-[calc(100dvh-100px)] overflow-y-auto p-4">
+          <div className="h-[calc(100dvh-150px)] overflow-y-auto p-4">
             {children}
           </div>
           <Footer />
