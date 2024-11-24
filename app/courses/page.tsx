@@ -1,5 +1,4 @@
 import { Flags } from "@/components/Flags";
-import Image from "next/image";
 
 function CoursesPage() {
   return (
