@@ -88,7 +88,7 @@ function BrochuresPage() {
 
   const cits: BrochureProps[] = [
     {
-      title: "Citazione motivazionale 1",
+      title: "Citazione motivazionale",
       subtitle: "Prima citazione",
       description: "Prima citazione motivazionale",
       imagePath: "cit1.png",
@@ -114,6 +114,37 @@ function BrochuresPage() {
       description: "Quarta citazione motivazionale",
       imagePath: "cit4.png",
       href: "cit4.png",
+    },
+  ];
+
+  const fridays: BrochureProps[] = [
+    {
+      title: "Venerdì",
+      subtitle: "Prima citazione",
+      description: "Prima citazione motivazionale",
+      imagePath: "friday1.png",
+      href: "friday.pdf",
+    },
+    {
+      title: "Venerdì",
+      subtitle: "Seconda citazione",
+      description: "Seconda citazione motivazionale",
+      imagePath: "friday2.png",
+      href: "friday.pdf",
+    },
+    {
+      title: "Venerdì",
+      subtitle: "Terza citazione",
+      description: "Terza citazione motivazionale",
+      imagePath: "friday3.png",
+      href: "friday.pdf",
+    },
+    {
+      title: "Venerdì",
+      subtitle: "Quarta citazione",
+      description: "Quarta citazione motivazionale",
+      imagePath: "friday4.png",
+      href: "friday.pdf",
     },
   ];
 
@@ -144,6 +175,15 @@ function BrochuresPage() {
       <div className="flex justify-center items-center flex-wrap gap-16">
         {cits.map(conv => (
           <Brochure key={conv.href} {...conv} />
+        ))}
+      </div>
+
+      <h2 className="text-4xl text-center my-12">
+        Citazioni motivazionali per il venerdì
+      </h2>
+      <div className="flex justify-center items-center flex-wrap gap-16">
+        {fridays.map(conv => (
+          <Brochure key={conv.subtitle} {...conv} />
         ))}
       </div>
     </div>
