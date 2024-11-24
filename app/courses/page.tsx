@@ -38,7 +38,7 @@ function CoursesPage() {
     <div className="flex flex-col items-center gap-8 p-4">
       <h2 className="text-4xl font-semibold text-center">I nostri corsi</h2>
       <h3 className="text-2xl text-center mb-8">
-        Seleziona l'opzione più adatta alle tue esigenze
+        Seleziona la sezione più adatta alle tue esigenze
       </h3>
 
       <div className="flex justify-center items-center gap-16 flex-wrap">
