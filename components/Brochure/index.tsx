@@ -19,29 +19,29 @@ function Brochure({
   href,
 }: BrochureProps) {
   return (
-    <Card className="bg-gradient-to-br from-background to-muted hover:border-primary">
-      <CardHeader>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{subtitle}</CardDescription>
-      </CardHeader>
+    <Link href={`/pdf/brochures/${href}`} target="_blank">
+      <Card className="bg-gradient-to-br from-background to-muted hover:border-primary">
+        <CardHeader>
+          <CardTitle>{title}</CardTitle>
+          <CardDescription>{subtitle}</CardDescription>
+        </CardHeader>
 
-      <CardContent className="w-[350px]">
-        <Image
-          src={`/images/brochures/${imagePath}`}
-          alt={title}
-          width={350}
-          height={250}
-          priority
-        />
-        <p className="text-justify text-sm my-4">{description}</p>
-      </CardContent>
+        <CardContent className="w-[350px]">
+          <Image
+            src={`/images/brochures/${imagePath}`}
+            alt={title}
+            width={350}
+            height={250}
+            priority
+          />
+          <p className="text-justify text-sm my-4">{description}</p>
+        </CardContent>
 
-      <CardFooter>
-        <Link href={`/pdf/brochures/${href}`} target="_blank">
+        <CardFooter>
           <LinkIcon />
-        </Link>
-      </CardFooter>
-    </Card>
+        </CardFooter>
+      </Card>
+    </Link>
   );
 }
 

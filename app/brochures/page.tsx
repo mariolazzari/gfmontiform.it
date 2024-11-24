@@ -31,11 +31,42 @@ function BrochuresPage() {
     },
   ];
 
+  const hallos: BrochureProps[] = [
+    {
+      title: "Halloween vs Ognissanti",
+      subtitle: "Primo episodio",
+      description: "Significati diversi",
+      imagePath: "halloween1.png",
+      href: "halloween.pdf",
+    },
+    {
+      title: "Halloween vs Ognissanti",
+      subtitle: "Secondo episodio",
+      description: "Origine anglosassone",
+      imagePath: "halloween2.png",
+      href: "halloween.pdf",
+    },
+    {
+      title: "Halloween vs Ognissanti",
+      subtitle: "Terzo episodio",
+      description: "Radici cattoliche",
+      imagePath: "halloween3.png",
+      href: "halloween.pdf",
+    },
+  ];
+
   return (
-    <div className="flex flex-col items-center gap-4 p-4">
-      <h2 className="text-4xl text-center">Conversazioni</h2>
+    <div className="flex flex-col items-center">
+      <h2 className="text-4xl text-center my-8">Conversazioni</h2>
       <div className="flex justify-center items-center flex-wrap gap-8">
         {conversations.map(conv => (
+          <Brochure key={conv.title} {...conv} />
+        ))}
+      </div>
+
+      <h2 className="text-4xl text-center my-8">Halloween</h2>
+      <div className="flex justify-center items-center flex-wrap gap-8">
+        {hallos.map(conv => (
           <Brochure key={conv.title} {...conv} />
         ))}
       </div>
