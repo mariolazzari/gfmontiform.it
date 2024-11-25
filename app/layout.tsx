@@ -22,15 +22,6 @@ export const metadata: Metadata = {
     url: "https://gfmontiform.it",
     siteName: "GF Montiform",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Next.js",
-    description: "The React Framework for the Web",
-    siteId: "1467726470533754880",
-    creator: "@nextjs",
-    creatorId: "1467726470533754880",
-    images: ["https://nextjs.org/og.png"], // Must be an absolute URL
-  },
 };
 
 function RootLayout({ children }: Layout) {
