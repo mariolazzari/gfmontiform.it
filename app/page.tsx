@@ -92,10 +92,10 @@ function HomePage() {
       </div>
 
       <div className="flex flex-col items-center mt-8">
-        <h4 className="text-2xl">3,2,1 …GO!</h4>
-        <h5 className="text-xl text-center">
+        <h3 className="text-2xl">3,2,1 …GO!</h3>
+        <h4 className="text-xl text-center">
           La tua conoscenza della lingua inizia con il prossimo click
-        </h5>
+        </h4>
         <Image
           className="my-8"
           src="/images/conv.png"

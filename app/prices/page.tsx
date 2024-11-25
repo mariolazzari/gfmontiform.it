@@ -69,6 +69,20 @@ function PricesPage() {
           <Price key={price.title} {...price} />
         ))}
       </div>
+
+      <div className="max-w-xl mx-auto bg-muted p-8 rounded-xl shadow-xl my-4">
+        <p className="text-justify">
+          GF Montiform è un centro linguistico orientato alla comunicazione,
+          ponendo l&apos;accento sull&apos;uso pratico della lingua attraverso
+          attività interattive, conversazioni autentiche e contesti realistici,
+          al fine di migliorare le abilità linguistiche degli studenti in modo
+          efficace.
+        </p>
+      </div>
+
+      <h4 className="text-3xl font-semibold text-center my-4">
+        Impara una nuova lingua, scopri nuove culture!
+      </h4>
     </>
   );
 }
