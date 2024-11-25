@@ -1,18 +1,31 @@
 import Image from "next/image";
 import { CourseProps } from "./CourseProps";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export function Course({ title, description, imagePath }: CourseProps) {
   return (
-    <div className="flex flex-col items-center gap-4 w-[350px] h-[450px] p-4 border hover:border-primary rounded-xl shadow-xl bg-gradient-to-br from-background to-muted">
-      <h6 className="font-bold text-xl">{title}</h6>
-      <Image
-        src={`/images/courses/${imagePath}`}
-        alt={title}
-        width={350}
-        height={250}
-        priority
-      />
-      <p className="text-justify">{description}</p>
-    </div>
+    <Card className="bg-gradient-to-br from-background to-muted hover:border-primary ">
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription></CardDescription>
+      </CardHeader>
+
+      <CardContent className="w-[350px] h-[350px]">
+        <Image
+          src={`/images/courses/${imagePath}`}
+          alt={title}
+          width={350}
+          height={250}
+          priority
+        />
+        <p className="text-justify text-sm my-4">{description}</p>
+      </CardContent>
+    </Card>
   );
 }
