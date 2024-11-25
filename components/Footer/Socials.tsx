@@ -30,7 +30,7 @@ export function Socials() {
   return (
     <div className="flex justify-center gap-2">
       {links.map(({ href, icon }) => (
-        <Link key={href} href={href}>
+        <Link key={href} href={href} target="_blank">
           {icon}
         </Link>
       ))}
