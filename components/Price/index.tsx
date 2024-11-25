@@ -5,6 +5,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
+  CardFooter,
 } from "@/components/ui/card";
 import { PriceProps } from "./PriceProps";
 
@@ -15,13 +16,13 @@ export function Price({
   prices = [],
 }: PriceProps) {
   return (
-    <Card className="bg-gradient-to-br from-background to-muted hover:border-primary ">
+    <Card className="w-[350px] h-[600px] bg-gradient-to-br from-background to-muted hover:border-primary ">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription></CardDescription>
       </CardHeader>
 
-      <CardContent className="w-[350px] h-[350px]">
+      <CardContent className="space-y-2">
         <Image
           src={`/images/prices/${imagePath}`}
           alt={title}
@@ -30,18 +31,20 @@ export function Price({
           priority
         />
 
-        <ul className="list-disc space-y-2">
+        <ul className="list-disc space-y-1">
           {options.map((opt, id) => (
             <li key={`${title}_opt_${id}`}>{opt}</li>
           ))}
         </ul>
+      </CardContent>
 
-        <ul className="text-center list-disc space-y-2">
+      <CardFooter>
+        <ul className="list-disc space-y-1">
           {prices.map((price, id) => (
             <li key={`${title}_pr_${id}`}>{price}</li>
           ))}
         </ul>
-      </CardContent>
+      </CardFooter>
     </Card>
   );
 }

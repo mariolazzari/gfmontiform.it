@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start -p 3333",
+    "start": "next start -p 3005",
     "lint": "next lint",
     "clean": "rm -rf node_modules & rm -rf .next"
   },
