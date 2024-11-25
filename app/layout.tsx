@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     template: "%s | GF Montiform",
     default: "GF Montiform",
   },
+  metadataBase: new URL("https://gfmontiform.it"),
   description: "GF MontiForm - corsi di lingue Montichiari",
   keywords: ["Corsi", "Lingue", "Brescia", "Montichiari"],
   authors: [{ name: "Mario Lazzari", url: "https://mariolazzari.it" }],
