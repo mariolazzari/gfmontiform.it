@@ -1,5 +1,10 @@
 import { Price } from "@/components/Price";
 import { PriceProps } from "@/components/Price/PriceProps";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Prezzi",
+};
 
 function PricesPage() {
   const prices: PriceProps[] = [

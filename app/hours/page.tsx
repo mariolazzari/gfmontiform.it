@@ -3,6 +3,11 @@ import { Hour } from "@/components/Hour";
 import { HourProps } from "@/components/Hour/HourProps";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Orari",
+};
 
 function HoursPage() {
   const hours: HourProps[] = [
