@@ -5,6 +5,7 @@ import { geistMono, geistSans } from "./fonts";
 import { ThemeProvider } from "next-themes";
 import { Footer } from "@/components/Footer";
 import { Layout } from "@/types/Layout";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: {
@@ -39,6 +40,8 @@ function RootLayout({ children }: Layout) {
           <Footer />
         </ThemeProvider>
       </body>
+
+      <GoogleTagManager gtmId="GTM-T3KQ5P9J" />
     </html>
   );
 }
