@@ -8,7 +8,7 @@ export function Flags({ size = 64 }: FlagsProps) {
     <div className="flex justify-center items-center flex-wrap gap-4 max-w-xl">
       {flags.map(flag => (
         <Image
-          className="h-auto w-auto"
+          className="h-auto"
           key={flag}
           src={`/images/flags/${flag}.png`}
           alt={flag}
