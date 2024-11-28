@@ -8,6 +8,9 @@ import { CourseProps } from "@/components/Course/CourseProps";
 
 export const metadata: Metadata = {
   title: "Corsi",
+  alternates: {
+    canonical: "/courses",
+  },
 };
 
 function CoursesPage() {

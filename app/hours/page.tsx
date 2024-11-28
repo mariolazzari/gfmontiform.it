@@ -7,6 +7,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Orari",
+  alternates: {
+    canonical: "/hours",
+  },
 };
 
 function HoursPage() {

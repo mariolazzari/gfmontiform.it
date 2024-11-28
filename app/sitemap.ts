@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map(route => ({
     url: `https://gfmontiform.it${route}`,
     lastModified: new Date(),
-    changeFrequency: "weekly",
+    changeFrequency: "daily",
     priority: 1,
   }));
 }

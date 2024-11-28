@@ -8,11 +8,14 @@ import { Layout } from "@/types/Layout";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gfmontiform.it"),
   title: {
     template: "%s | GF Montiform",
     default: "GF Montiform",
   },
-  metadataBase: new URL("https://gfmontiform.it"),
+  alternates: {
+    canonical: "/",
+  },
   description: "GF MontiForm - corsi di lingue Montichiari",
   keywords: ["Corsi", "Lingue", "Brescia", "Montichiari"],
   authors: [{ name: "Mario Lazzari", url: "https://mariolazzari.it" }],
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
 
 function RootLayout({ children }: Layout) {
   return (
-    <html lang="it" suppressHydrationWarning>
+    <html lang="it">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
