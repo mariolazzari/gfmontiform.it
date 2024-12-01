@@ -10,14 +10,14 @@ import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 export const metadata: Metadata = {
   metadataBase: new URL("https://gfmontiform.it"),
   title: {
-    template: "%s | GF Montiform",
-    default: "GF Montiform",
+    template: "%s | GF Montiform Corsi di lingue Montichiari",
+    default: "GF Montiform | Corsi di lingue Montichiari",
   },
   alternates: {
     canonical: "/",
   },
   description: "GF MontiForm - corsi di lingue Montichiari",
-  keywords: ["Corsi", "Lingue", "Brescia", "Montichiari"],
+  keywords: ["Corsi", "Lingue", "Brescia", "Montichiari", "Inglese"],
   authors: [{ name: "Mario Lazzari", url: "https://mariolazzari.it" }],
   creator: "Mario Lazzari",
   openGraph: {
