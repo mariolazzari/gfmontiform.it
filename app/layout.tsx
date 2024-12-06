@@ -31,11 +31,16 @@ export const metadata: Metadata = {
 
 function RootLayout({ children }: Layout) {
   return (
-    <html lang="it">
+    <html lang="it" suppressHydrationWarning>
+      <head>
+        <GoogleTagManager gtmId="GTM-T3KQ5P9J" />
+        <GoogleAnalytics gaId="G-M2676NK92Z" />
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
           <div className="h-[calc(100dvh-150px)] overflow-y-auto p-4">
             {children}
@@ -43,9 +48,6 @@ function RootLayout({ children }: Layout) {
           <Footer />
         </ThemeProvider>
       </body>
-
-      <GoogleTagManager gtmId="GTM-T3KQ5P9J" />
-      <GoogleAnalytics gaId="G-M2676NK92Z" />
     </html>
   );
 }
