@@ -6,6 +6,8 @@ import { ThemeProvider } from "next-themes";
 import { Footer } from "@/components/Footer";
 import { Layout } from "@/types/Layout";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gfmontiform.it"),
@@ -35,6 +37,7 @@ function RootLayout({ children }: Layout) {
       <head>
         <GoogleTagManager gtmId="GTM-T3KQ5P9J" />
         <GoogleAnalytics gaId="G-M2676NK92Z" />
+        <Script src="/scripts/pixel.js" strategy="beforeInteractive" />
       </head>
 
       <body
@@ -47,6 +50,16 @@ function RootLayout({ children }: Layout) {
           </div>
           <Footer />
         </ThemeProvider>
+
+        <noscript>
+          <Image
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=975906963878222&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
       </body>
     </html>
   );
