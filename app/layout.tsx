@@ -6,6 +6,8 @@ import { ThemeProvider } from "next-themes";
 import { Footer } from "@/components/Footer";
 import { Layout } from "@/types/Layout";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
+import { FacebookPixel } from "../components/FacebooPixel";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gfmontiform.it"),
@@ -46,6 +48,10 @@ function RootLayout({ children }: Layout) {
             {children}
           </div>
           <Footer />
+
+          <Suspense fallback={null}>
+            <FacebookPixel />
+          </Suspense>
         </ThemeProvider>
       </body>
     </html>
