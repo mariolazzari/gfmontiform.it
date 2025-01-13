@@ -52,12 +52,11 @@ function RootLayout({ children }: Layout) {
         </ThemeProvider>
 
         <noscript>
-          <Image
+          <img
             height="1"
             width="1"
             style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=975906963878222&ev=PageView&noscript=1"
-            alt=""
           />
         </noscript>
       </body>
