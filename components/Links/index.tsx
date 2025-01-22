@@ -5,6 +5,7 @@ import {
   GraduationCap,
   Clock9,
   Euro,
+  Play,
 } from "lucide-react";
 import { LinksProps } from "./LinksProps";
 import Link from "next/link";
@@ -43,6 +44,11 @@ export function Links({ isVertical = false }: LinksProps) {
       label: "Prezzi",
       href: "/prices",
     },
+    {
+      icon: <Play />,
+      label: "Video",
+      href: "/videos",
+    },
   ];
 
   const renderItem = (child: ReactNode) => {
@@ -59,7 +65,7 @@ export function Links({ isVertical = false }: LinksProps) {
         <li key={link.href}>
           {renderItem(
             <Link href={link.href} className="flex items-center gap-2 text-lg">
-              {link.icon} {link.label}
+              {isVertical && link.icon} {link.label}
             </Link>
           )}
         </li>
