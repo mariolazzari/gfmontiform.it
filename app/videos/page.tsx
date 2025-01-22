@@ -1,4 +1,12 @@
 import { VideoPlayer } from "@/components/VideoPlayer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Video",
+  alternates: {
+    canonical: "/videos",
+  },
+};
 
 function VideosPage() {
   const videos = [
