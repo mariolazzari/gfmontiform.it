@@ -15,5 +15,5 @@ export function VideoPlayer({ url, width = 350 }: VideoPlayerProps) {
     return null;
   }
 
-  return <InstagramEmbed url={url} width={width} />;
+  return <InstagramEmbed url={url} width={width} aria-label={url} />;
 }
