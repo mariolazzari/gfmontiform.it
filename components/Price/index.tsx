@@ -16,7 +16,7 @@ export function Price({
   prices = [],
 }: PriceProps) {
   return (
-    <Card className="w-[350px] h-[600px] bg-gradient-to-br from-background to-muted hover:border-primary ">
+    <Card className="w-[350px] h-[600px] bg-linear-to-br from-background to-muted hover:border-primary ">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription></CardDescription>

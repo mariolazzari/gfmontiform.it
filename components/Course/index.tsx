@@ -10,7 +10,7 @@ import {
 
 export function Course({ title, description, imagePath }: CourseProps) {
   return (
-    <Card className="bg-gradient-to-br from-background to-muted hover:border-primary ">
+    <Card className="bg-linear-to-br from-background to-muted hover:border-primary ">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription></CardDescription>

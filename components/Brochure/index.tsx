@@ -20,7 +20,7 @@ function Brochure({
 }: BrochureProps) {
   return (
     <Link href={`/pdf/brochures/${href}`} target="_blank">
-      <Card className="bg-gradient-to-br from-background to-muted hover:border-primary">
+      <Card className="bg-linear-to-br from-background to-muted hover:border-primary">
         <CardHeader>
           <CardTitle>{title}</CardTitle>
           <CardDescription>{subtitle}</CardDescription>

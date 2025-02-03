@@ -3,7 +3,7 @@ import { HourProps } from "./HourProps";
 
 export function Hour({ day, ranges = [] }: HourProps) {
   return (
-    <div className="p-8 bg-gradient-to-br from-background to-muted rounded-xl shadow-xl w-[350px] h-[350px] space-y-5 border hover:border-primary">
+    <div className="p-8 bg-linear-to-br from-background to-muted rounded-xl shadow-xl w-[350px] h-[350px] space-y-5 border hover:border-primary">
       <h6 className="text-center font-semibold text-3xl">{day}</h6>
       <Separator className="bg-primary" />
 

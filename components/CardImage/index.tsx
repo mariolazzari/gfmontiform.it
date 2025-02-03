@@ -19,7 +19,7 @@ export function CardImage({
   href,
 }: CardImageProps) {
   return (
-    <Card className="bg-gradient-to-br from-background to-muted hover:border-primary">
+    <Card className="bg-linear-to-br from-background to-muted hover:border-primary">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{subtitle}</CardDescription>
