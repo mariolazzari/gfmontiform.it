@@ -1,4 +1,5 @@
 import { VideoPlayer } from "@/components/VideoPlayer";
+import { videos } from "@/db/videos";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,11 +10,6 @@ export const metadata: Metadata = {
 };
 
 function VideosPage() {
-  const videos = [
-    "https://www.instagram.com/reel/C_arx8ktwC1/?utm_source=ig_web_copy_link",
-    "https://www.instagram.com/reel/DEx6QzIMvnc/?utm_source=ig_web_copy_link",
-  ];
-
   return (
     <div className="flex flex-col gap-8 items-center">
       <h2 className="text-4xl font-semibold">I nostri video</h2>
