@@ -16,7 +16,7 @@ export function Course({ title, description, imagePath }: CourseProps) {
         <CardDescription></CardDescription>
       </CardHeader>
 
-      <CardContent className="w-[350px] h-[350px]">
+      <CardContent className="w-[350px] min-h-[350px]">
         <Image
           src={`/images/courses/${imagePath}`}
           alt={title}

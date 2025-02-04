@@ -26,11 +26,13 @@ function AboutPage() {
         <TextContainer key={section.title} {...section} />
       ))}
 
-      <h3 className="text-3xl">Collaboratori</h3>
+      <h3 className="text-3xl my-4">Collaboratori</h3>
 
-      {mateSections.map(section => (
-        <TextContainer key={section.title} {...section} />
-      ))}
+      <div className="flex gap-8 flex-wrap justify-center">
+        {mateSections.map(section => (
+          <TextContainer key={section.title} {...section} />
+        ))}
+      </div>
     </div>
   );
 }

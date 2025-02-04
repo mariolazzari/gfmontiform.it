@@ -76,4 +76,17 @@ export const mateSections: TextContainerProps[] = [
       "Imparare una lingua apre nuovi orizzonti e consente di vedere il mondo da prospettive diverse. Attraverso le mie lezioni, desidero non solo insegnare il giapponese, ma anche condividere curiosità e aspetti culturali che vi permetteranno di immergervi nella ricchezza del mio paese.",
     ],
   },
-];
+  {
+    title: "Federico Galli",
+    paragraphs: [
+      "Marco Galli nasce a Montichiari, BS, il primo aprile 1971. Arriva alla pubblicazione molto tardi, a 37 anni.",
+      "In poco più di dieci anni pubblica una decina di libri a fumetti per diverse case editrici italiane e straniere, tra cui Coconino Press e Bonelli.",
+      "È illustratore per l’editoria e svariate riviste, character designer per l’animazione (Gatta Cenerentola, 2017) e curatore di antalogie (Materia Degenere, Diabolo Edizioni, 2018).",
+      "Nel 2021 vince il premio “Yellow Kid” come “miglior autore dell’anno” a Lucca Comics & games, con il libro “DENTRO UNA SCATOLA DI LATTA”, secondo libro per il collettivo Progetto Stigma, edito da Eris Edizioni. Nel 2022 pubblica il suo primo romanzo (La voragine, Oligo Editore).",
+      "A febbraio esce il suo personale Dylan Dog (Colorfest), dove ha scritto la storia, l’ha disegnata e colorata.",
+      "L’ultimo suo libro, “Il Nido” (Coconino Press), ha vinto il premio “Emilio Lussu” nel 2022 come miglior graphic novel dell’anno e il Romics nel 2023 sempre come miglior fumetto dell’anno al Festival Internazionale del Fumetto di Roma. “Il Nido” è stato tradotto in Francia per éditions Sarbacane e in Spagna per Salamandra ediciones.",
+      "Attualmente sta lavorando a un nuovo Dylan Dog (Colorfest), scritto, disegnato ecolorato, e insegna alla Scuola Comics di Brescia.",
+    ],
+    imagePath: "/images/galli.jpg",
+  },
+].sort((a, b) => a.title.localeCompare(b.title));

@@ -156,4 +156,11 @@ export const cult: BrochureProps[] = [
     imagePath: "pot.png",
     href: "pot.pdf",
   },
+  {
+    title: "Corso di fumetto",
+    subtitle: "Base e Pro",
+    description: "Nuovo corso di fumetto, base e pro, per adulti e bambini",
+    imagePath: "fumetto.jpg",
+    href: "fumetto.jpg",
+  },
 ];
