@@ -9,6 +9,7 @@ export const mainSections: TextContainerProps[] = [
       "Nasce così, dunque, l’idea di aprire a Montichiari un centro linguistico: corsi di lingue per aziende (Federica ha operato nel settore import export per oltre 15 anni e ha vissuto tutti gli ambiti di un'impresa che si rivolge all'estero), ripetizioni per ragazzi che vogliono migliorare il loro livello scolastico e corsi di inglese, spagnolo, russo, giapponese e tedesco per privati, che vogliono conoscere la lingua per i più diversi motivi: per lavorare, per viaggiare o anche semplicemente solo per divertirsi.",
       "Fiore all’occhiello di GF Montiform sono infatti le “powerful conversations”, incontri settimanali di gruppi di conversazione per “sciogliere la lingua ed allenare il sapere” con tavoli a tema, role playing, dibattiti e letture: insomma tutto quello che può servire per essere un vero cittadino del mondo!",
     ],
+    imagePath: "/images/people/all.jpg",
   },
   {
     title: "Federica",
@@ -18,7 +19,7 @@ export const mainSections: TextContainerProps[] = [
       "Rientrando da questa esperienza, mi laureo e vengo assunta inizialmente come back office e poi export manager in un calzificio occupandomi della vendita in tutti i paesi di lingua tedesca (Austria, Germania e Svizzera), Sudafrica e Australia. Le tecniche di vendita diventano la mia passione, frequento numerosi corsi e approfondimenti e, curiosa di metterle in pratica, mi faccio strada in diverse realtà lavorative sempre come export manager.",
       "Senza mai dimenticare la mia forte passione, frequento corsi di francese e spagnolo. Decido così di tramandare questa mia passione agli altri. Nel 2020 la decisione di aprire la scuola, perché grazie alle esperienze passate, sono certe di poter offrire un servizio il più utile possibile per una migliore e più completa formazione.",
     ],
-    imagePath: "/images/fede.png",
+    imagePath: "/images/people/fede.png",
   },
 ];
 
@@ -33,6 +34,7 @@ export const mateSections: TextContainerProps[] = [
       "Dopo un periodo vissuto in Germania come ragazzo alla pari, mi sono iscritto all’Universitá di Verona, dove mi sono laureato in triennale nel 2020. Dopo un’ulteriore esperienza nella capitale tedesca, ho completato i miei studi con la laurea magistrale in lingue e letterature comparate nel novembre 2022.",
       "L’interesse per le culture straniere e la passione per l’insegnamento mi hanno portato fino qui, pronto per dare il massimo in ogni esperienza!",
     ],
+    imagePath: "/images/people/matteo.jpg",
   },
   {
     title: "Manuel",
@@ -43,6 +45,7 @@ export const mateSections: TextContainerProps[] = [
       "Mi dedico alle lezioni di giapponese con una professoressa madrelingua e nel 2017 ottengo una certificazione internazionale di conoscenza della lingua, il JLPT N5, presso L’università Ca’ Foscari di Venezia.",
       "Continuo a mantenere attivo l’uso del giapponese grazie ai miei hobby e nel 2022 decido di contattare GF Montiform per iniziare un progetto innovativo: Insegnare le basi della lingua del Sol Levante a chi ha la mia stessa passione verso il mondo degli Anime/Manga e dei Videogames.",
     ],
+    imagePath: "/images/people/manuel.jpg",
   },
   {
     title: "Monica",
@@ -53,6 +56,7 @@ export const mateSections: TextContainerProps[] = [
       "Nonostante l’intenso percorso accademico, ho sempre mantenuto l’uso quotidiano della lingua inglese in famiglia, in viaggio e nei miei hobby, in particolare nella scrittura.",
       "Dopo diverse esperienze in scuole pubbliche e private, sono finalmente arrivata alla scuola Montiform, dove spero di poter continuare a condividere la mia passione per lo studio, la cura e il confronto tra le mie due culture d'origine.",
     ],
+    imagePath: "/images/people/monica.jpg",
   },
   {
     title: "Vassillissa",
@@ -65,6 +69,7 @@ export const mateSections: TextContainerProps[] = [
       "Nel corso degli anni di vita in Italia avevo avuto diverse richieste private di insegnamento della lingua russa, sia dagli studenti universitari, sia dalle persone semplicemente curiose per una cultura diversa.",
       "Ho conosciuto Federica durante l'iscrizione dei miei bambini all'English Camp estivo, e da questa conoscenza era nata una bella collaborazione da cui spero di continuare a mantenere l'interesse per la mia lingua e cultura.",
     ],
+    imagePath: "/images/people/vassilissa.jpg",
   },
   {
     title: "Akiko",
@@ -75,6 +80,7 @@ export const mateSections: TextContainerProps[] = [
       "Il Giappone è un paese ricco e profondo, proprio come l’Italia, e continuo a scoprire cose interessanti che mi affascinano ogni giorno.Ho lavorato a lungo nel settore della moda, ma da oltre 20 anni porto avanti con passione l’insegnamento della lingua giapponese.",
       "Imparare una lingua apre nuovi orizzonti e consente di vedere il mondo da prospettive diverse. Attraverso le mie lezioni, desidero non solo insegnare il giapponese, ma anche condividere curiosità e aspetti culturali che vi permetteranno di immergervi nella ricchezza del mio paese.",
     ],
+    imagePath: "/images/people/akiko.jpg",
   },
   {
     title: "Federico Galli",
@@ -87,6 +93,6 @@ export const mateSections: TextContainerProps[] = [
       "L’ultimo suo libro, “Il Nido” (Coconino Press), ha vinto il premio “Emilio Lussu” nel 2022 come miglior graphic novel dell’anno e il Romics nel 2023 sempre come miglior fumetto dell’anno al Festival Internazionale del Fumetto di Roma. “Il Nido” è stato tradotto in Francia per éditions Sarbacane e in Spagna per Salamandra ediciones.",
       "Attualmente sta lavorando a un nuovo Dylan Dog (Colorfest), scritto, disegnato ecolorato, e insegna alla Scuola Comics di Brescia.",
     ],
-    imagePath: "/images/galli.jpg",
+    imagePath: "/images/people/galli.jpg",
   },
 ].sort((a, b) => a.title.localeCompare(b.title));
