@@ -83,7 +83,7 @@ export const mateSections: TextContainerProps[] = [
     imagePath: "/images/people/akiko.jpg",
   },
   {
-    title: "Federico Galli",
+    title: "Marco Galli",
     paragraphs: [
       "Marco Galli nasce a Montichiari, BS, il primo aprile 1971. Arriva alla pubblicazione molto tardi, a 37 anni.",
       "In poco più di dieci anni pubblica una decina di libri a fumetti per diverse case editrici italiane e straniere, tra cui Coconino Press e Bonelli.",
