@@ -8,6 +8,7 @@ import { Layout } from "@/types/Layout";
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google";
 import { FacebookPixel } from "../components/FacebooPixel";
 import { Suspense } from "react";
+import { Cookies } from "@/components/Cookies";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gfmontiform.it"),
@@ -52,6 +53,8 @@ function RootLayout({ children }: Layout) {
           <Suspense fallback={null}>
             <FacebookPixel />
           </Suspense>
+
+          <Cookies />
         </ThemeProvider>
       </body>
     </html>
