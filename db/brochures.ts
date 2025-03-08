@@ -2,6 +2,21 @@ import { BrochureProps } from "@/components/Brochure/BrochureProps";
 
 export const conversations: BrochureProps[] = [
   {
+    title: "English Conversations",
+    subtitle: "Saturday 16th and 30th from 10 - 11.30 am ",
+    description:
+      "English Conversations Improve your English in a relaxed atmosphere",
+    imagePath: "eng-saturday.png",
+    href: "eng-saturday.pdf",
+  },
+  {
+    title: "English Variations",
+    subtitle: "Travel through accents",
+    description: "Con tre insegnanti madrelingua",
+    imagePath: "eng-variations.png",
+    href: "eng-variations.pdf",
+  },
+  {
     title: "Vale!",
     subtitle: "Camp estivo in spagnolo",
     description:
