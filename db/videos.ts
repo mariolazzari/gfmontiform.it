@@ -1,4 +1,7 @@
 export const videos = [
+  "https://www.instagram.com/reel/DGdDORWvKUW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  "https://www.instagram.com/p/DGyCJduOP8g/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  "https://www.instagram.com/p/DG1I2_8izlc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",
   "https://www.instagram.com/reel/C_arx8ktwC1/?utm_source=ig_web_copy_link",
   "https://www.instagram.com/reel/DEx6QzIMvnc/?utm_source=ig_web_copy_link",
   "https://www.instagram.com/reel/DFSHLtrJeLe/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D",

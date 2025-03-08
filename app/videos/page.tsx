@@ -13,7 +13,7 @@ function VideosPage() {
   return (
     <div className="flex flex-col gap-8 items-center">
       <h2 className="text-4xl font-semibold">I nostri video</h2>
-      <div className="flex justify-center items-center gap-16 flex-wrap">
+      <div className="flex justify-center items-start gap-16 flex-wrap">
         {videos.map(video => (
           <VideoPlayer key={video} url={video} />
         ))}
