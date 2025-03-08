@@ -2,6 +2,14 @@ import { BrochureProps } from "@/components/Brochure/BrochureProps";
 
 export const conversations: BrochureProps[] = [
   {
+    title: "Vale!",
+    subtitle: "Camp estivo in spagnolo",
+    description:
+      "Gioca, impara e divertiti in spagnolo: un campo estivo immersivo per bambini e ragazzi",
+    imagePath: "vale2.png",
+    href: "vale2.pdf",
+  },
+  {
     title: "English conversation",
     subtitle: "Conversazione sabato mattina",
     description: "Migliora il tuo inglese in un'atmosfera rilassata",
