@@ -2,6 +2,15 @@ import { BrochureProps } from "@/components/Brochure/BrochureProps";
 
 export const conversations: BrochureProps[] = [
   {
+    title: "EduCoCamp Montichiari",
+    subtitle: "Dal 25 agosto al 5 settembre 2025",
+    description:
+      "Esperti Madrelingua Inglese accuratamente selezionati e formati provenienti da tutto il mondo anglofono.",
+    imagePath: "educamp.png",
+    href: "educamp.pdf",
+  },
+
+  {
     title: "English Conversations",
     subtitle: "Saturday 16th and 30th from 10 - 11.30 am ",
     description:
