@@ -6,6 +6,7 @@ import { CardImageProps } from "@/components/CardImage/CardImageProps";
 import { CardImage } from "@/components/CardImage";
 import Image from "next/image";
 import { Flags } from "@/components/Flags";
+import { News } from "@/components/News";
 
 function HomePage() {
   const buttons = [
@@ -84,6 +85,8 @@ function HomePage() {
       </div>
 
       <Flags />
+
+      <News />
 
       <div className="flex justify-center items-center gap-16 container flex-wrap">
         {cards.map(card => (
