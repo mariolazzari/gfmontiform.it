@@ -55,11 +55,7 @@ function HomePage() {
 
       <News />
 
-      <div className="flex justify-center items-center gap-16 container flex-wrap">
-        {cards.map(card => (
-          <CardImage key={card.title} {...card} />
-        ))}
-      </div>
+      <References />
 
       <div className="flex flex-col items-center mt-8">
         <h3 className="text-2xl">3,2,1 …GO!</h3>
