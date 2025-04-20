@@ -45,9 +45,9 @@ function RootLayout({ children }: Layout) {
       >
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
-          <div className="h-[calc(100dvh-150px)] overflow-y-auto p-4">
+          <main className="h-[calc(100dvh-150px)] overflow-y-auto p-4">
             {children}
-          </div>
+          </main>
           <Footer />
 
           <Suspense fallback={null}>
