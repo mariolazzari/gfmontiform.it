@@ -27,7 +27,7 @@ function Brochure({
         </CardHeader>
 
         <CardContent className="w-[350px] h-[300px]">
-          <div className="relative w-[300px] h-[250px] overflow-y-auto">
+          <div className="w-[300px] h-[250px] overflow-y-auto">
             <Image
               src={`/images/brochures/${imagePath}`}
               alt={title}
