@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useRef } from "react";
+import Euro15 from "@/public/images/brochures/15_euro.png";
 import Image from "next/image";
 import Spanish from "@/public/images/brochures/spanish.png";
 import Educamp from "@/public/images/brochures/educamp.png";
@@ -18,7 +19,7 @@ import Saturday from "@/public/images/brochures/saturday.png";
 import Comics from "@/public/images/brochures/fumetto.jpg";
 
 export function News() {
-  const images = [Educamp, Spanish, Cult, Saturday, Comics];
+  const images = [Euro15, Educamp, Spanish, Cult, Saturday, Comics];
 
   const plugin = useRef(
     Autoplay({

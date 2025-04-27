@@ -2,6 +2,13 @@ import { BrochureProps } from "@/components/Brochure/BrochureProps";
 
 export const conversations: BrochureProps[] = [
   {
+    title: "English Conversation 15€",
+    subtitle: "Sabato 10 e 23 maggio",
+    description: "Prenota ora! Oppure unisciti a noi!",
+    imagePath: "15_euro.png",
+    href: "15_euro.pdf",
+  },
+  {
     title: "EduCoCamp Montichiari",
     subtitle: "Dal 25 agosto al 5 settembre 2025",
     description:
@@ -9,7 +16,6 @@ export const conversations: BrochureProps[] = [
     imagePath: "educamp.png",
     href: "educamp.pdf",
   },
-
   {
     title: "English Conversations",
     subtitle: "Saturday 16th and 30th from 10 - 11.30 am ",
