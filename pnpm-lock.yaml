@@ -56,6 +56,9 @@ importers:
       react-facebook-pixel:
         specifier: ^1.0.4
         version: 1.0.4
+      react-floating-whatsapp:
+        specifier: ^5.0.8
+        version: 5.0.8(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@19.1.0)
@@ -2091,6 +2094,13 @@ packages:
 
   react-facebook-pixel@1.0.4:
     resolution: {integrity: sha512-givZY8MS0v/mdbRzvcvouBo/j0TtDiu/93f4gIjJXwDDgwlf6bYUiQvb2qcqjluOOD/hIKUQHNYLNsSOnoEklg==}
+
+  react-floating-whatsapp@5.0.8:
+    resolution: {integrity: sha512-4X485d04u7MoWpn61OpWPO/mL94P3gaFq1L932ztH7bo9eClAFcg5ufIxNKbJo9/1h0xpjWZKEW0KBB0apWzZw==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
 
   react-html-props@2.0.10:
     resolution: {integrity: sha512-nnDtzdYhsfjJbp2QRWIG23aB/kNHEJZI6hogY/aA2fAjhcvL9JYPwrd4SjkrB8bD070WJrhuk9Al8GA1iDbGzg==}
@@ -4599,6 +4609,11 @@ snapshots:
       scheduler: 0.26.0
 
   react-facebook-pixel@1.0.4: {}
+
+  react-floating-whatsapp@5.0.8(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   react-html-props@2.0.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
