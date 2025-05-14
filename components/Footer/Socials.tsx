@@ -18,7 +18,7 @@ export function Socials() {
       icon: <FaYoutube size={16} aria-label="youtube" />,
     },
     {
-      href: "https://web.whatsapp.com/send?tel=+393396287155",
+      href: "https://web.whatsapp.com/send?tel=+393312044244",
       icon: <FaWhatsapp size={16} aria-label="whatsapp" />,
     },
     {

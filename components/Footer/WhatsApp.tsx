@@ -5,7 +5,7 @@ export function WhatsApp() {
   return (
     <FloatingWhatsApp
       className="text-black"
-      phoneNumber="+39 339 628 7155"
+      phoneNumber="+39 331 204 4244"
       accountName="GF MontiForm"
       avatar="/images/logoW.png"
       statusMessage="Di solito rispondiamo nel giro di un'ora..."
