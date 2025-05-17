@@ -58,6 +58,44 @@ function CoursesPage() {
         </p>
       </div>
 
+      <div className="bg-muted max-w-xl text-justify p-8 rounded-xl shadow-xl space-y-4">
+        <h3 className="text-2xl font-bold text-center">
+          Corso gratuito di Business English per Partite IVA aperte in Lombardia
+        </h3>
+
+        <p>
+          Hai una Partita IVA aperta in Lombardia e lavori con clienti o partner
+          internazionali? Con il nostro corso di Business English, puoi
+          migliorare la tua comunicazione professionale in inglese… senza alcun
+          costo!
+        </p>
+
+        <p>
+          Grazie ai voucher formativi della Regione Lombardia, mettiamo a
+          disposizione un percorso completo e 100% finanziato per liberi
+          professionisti.
+        </p>
+
+        <p>
+          16 ore di formazione online in diretta (Zoom). Lezioni pratiche su:
+        </p>
+
+        <ul className="list-disc ml-4">
+          <li> email professionali</li>
+          <li>presentazioni e riunioni</li>
+          <li>linguaggio tecnico per il business</li>
+        </ul>
+
+        <p>Accesso a registrazioni e materiali didattici</p>
+        <p>Attestato riconosciuto da Regione Lombardia</p>
+
+        <p>A chi è rivolto?</p>
+        <p>
+          Titolari di Partita IVA individuale, con sede legale o operativa in
+          Lombardia (NON è richiesto essere residenti nella regione)
+        </p>
+      </div>
+
       <div className="flex justify-center items-center gap-16 flex-wrap p-8">
         {courses.map(course => (
           <Course key={course.title} {...course} />
