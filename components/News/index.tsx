@@ -1,6 +1,5 @@
 "use client";
 import Autoplay from "embla-carousel-autoplay";
-
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -10,16 +9,17 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useRef } from "react";
-import Euro15 from "@/public/images/brochures/15_euro.png";
 import Image from "next/image";
+import Euro15 from "@/public/images/brochures/15_euro.png";
 import Spanish from "@/public/images/brochures/spanish.png";
 import Educamp from "@/public/images/brochures/educamp.png";
 import Cult from "@/public/images/brochures/cult.png";
 import Saturday from "@/public/images/brochures/saturday.png";
 import Comics from "@/public/images/brochures/fumetto.jpg";
+import Vale from "@/public/images/brochures/vale.jpg";
 
 export function News() {
-  const images = [Euro15, Educamp, Spanish, Cult, Saturday, Comics];
+  const images = [Vale, Euro15, Educamp, Spanish, Cult, Saturday, Comics];
 
   const plugin = useRef(
     Autoplay({
