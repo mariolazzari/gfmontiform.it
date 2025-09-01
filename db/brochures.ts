@@ -2,6 +2,13 @@ import { BrochureProps } from "@/components/Brochure/BrochureProps";
 
 export const conversations: BrochureProps[] = [
   {
+    title: "Open day",
+    subtitle: "Lunedì 15 settembre",
+    description: "Prenota ora! Oppure unisciti a noi!",
+    imagePath: "open_day_20250915.png",
+    href: "open_day_20250915.pdf",
+  },
+  {
     title: "English Conversation 15€",
     subtitle: "Sabato 10 e 23 maggio",
     description: "Prenota ora! Oppure unisciti a noi!",

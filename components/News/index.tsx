@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import { useRef } from "react";
 import Image from "next/image";
+import OpenDay from "@/public/images/brochures/open_day_20250915.png";
 import Euro15 from "@/public/images/brochures/15_euro.png";
 import Spanish from "@/public/images/brochures/spanish.png";
 import Educamp from "@/public/images/brochures/educamp.png";
@@ -19,7 +20,16 @@ import Comics from "@/public/images/brochures/fumetto.jpg";
 import Vale from "@/public/images/brochures/vale.jpg";
 
 export function News() {
-  const images = [Vale, Euro15, Educamp, Spanish, Cult, Saturday, Comics];
+  const images = [
+    OpenDay,
+    Vale,
+    Euro15,
+    Educamp,
+    Spanish,
+    Cult,
+    Saturday,
+    Comics,
+  ];
 
   const plugin = useRef(
     Autoplay({
