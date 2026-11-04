@@ -26,8 +26,8 @@ function Brochure({
           <CardDescription>{subtitle}</CardDescription>
         </CardHeader>
 
-        <CardContent className="w-[350px] h-[300px]">
-          <div className="w-[300px] h-[250px] overflow-y-auto">
+        <CardContent className="w-87.5 h-75">
+          <div className="w-75 h-62.5 overflow-y-auto">
             <Image
               src={`/images/brochures/${imagePath}`}
               alt={title}
